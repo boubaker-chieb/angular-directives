@@ -1,0 +1,9 @@
+<div *ngIf='loading'>Loading ... </div>
+
+<input type="text" appUppercase>
+
+<ul>
+  <li *ngFor="let menuItem of menu">
+    <a [href]="menuItem.link">{{menuItem.label}}</a>
+  </li>
+</ul>
